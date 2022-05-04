@@ -1,0 +1,25 @@
+﻿<Window x:Class="SoundListMx.Configuration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoundListMx"
+        mc:Ignorable="d"
+        Title="Configuration" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        
+        <TextBlock>Path to game</TextBlock>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Height="20">
+            <TextBox x:Name="TextPath" Margin="0, 0, 5, 0" Text="Path" Width="250" Height="20"/>
+            <Button x:Name="BrowserBtn" Content="Browse..." Width="70" Height="20" Click="BrowserBtn_Click"/>
+        </StackPanel>
+        <Button x:Name="OkBtn" Grid.Row="2" Content="OK" Width="80" Margin="0, 25, 0, 0" Click="OkBtn_Click"/>
+    </Grid>
+</Window>
