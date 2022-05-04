@@ -7,9 +7,6 @@ using System.Windows.Media;
 
 namespace SoundListMx
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private string pathGmod = Properties.Settings.Default.pathGame;
@@ -67,10 +64,6 @@ namespace SoundListMx
 
                 var folderAddons = new TreeViewItem();
                 folderAddons.Header = "Addons";
-
-                var folderVpk = new TreeViewItem();
-                folderVpk.Header = "Valve Pack";
-
 
                 var sounds = treeViewFolder.GetItems(pathGmodSounds);
                 var addons = treeViewFolder.GetItems(pathGmodAddons);
